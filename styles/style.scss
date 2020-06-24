@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
+body{
+   max-height: 100vh;
+   margin: 0;
+   padding: 0;
+   background-color: #01A7C2;
+  
+}
+
+#app{
+    text-align: center;    
+}
+
+#drum-machine{
+    box-sizing: border-box;
+    height: 100vh;
+    padding-top: 16.5rem;
+    background-image: url("img/apple_better.png");
+    background-repeat: no-repeat;
+    background-size: auto 45rem;
+    background-position: center 1rem;
+}
+
+#display{
+    background-color: #E9ECF5;
+    border-radius: 6px;
+    box-sizing: border-box;
+    width: 18rem;
+    height: 4rem;
+    margin: 0 40.2%;
+    text-align: center;
+    p{
+        font-size: 2rem;
+        font-family: 'Odibee Sans', cursive;
+        padding: 1rem;
+    } 
+}
+
+//Styles for input range
+@mixin thumb{
+    box-shadow: 2px 2px 3px #1C1D21;
+    height: 1rem;
+    width: 1.5rem;
+    border-radius: 7px;
+    background-color: #E9ECF5;
+    cursor: pointer;
+}
+
+@mixin track{
+    width: 15rem;
+    height: .5rem;
+    background-color: #3F7CAC;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px #1C1D21;
+    cursor: pointer;
+}
+
+#keys-container{
+    width: 22rem;
+    margin: 1.5rem 40.2% 0;
+    display: grid;
+    grid-template-columns: 6rem 6rem 6rem;
+    grid-template-rows: 5rem 5rem 5rem;
+    grid-gap: .5rem;
+    .drum-pad{
+        border-radius: 5rem;
+        border: 3px outset #E9ECF5;
+        background-color: transparent;
+        font-family: 'Indie Flower', cursive;
+        font-weight: 900;
+        font-size: 2.8rem;
+        color: #E9ECF5;
+    }
+}
+
+
+input[type=range]{
+    -webkit-appearance: none; //Hides the slider so that custom slider can be made
+    width: 15rem; //Required width for Firefox
+    background: transparent; //Otherwise white in Chrome
+    margin-top: 1.7rem;
+       
+    //Thumb in Firefox
+    &::-moz-range-thumb{
+        @include thumb;
+    }
+    &::-ms-thumb{
+        @include thumb;
+    }
+
+    &::-webkit-slider-thumb{
+        //Removing appearance on thum on Webkit browsers needed to style it
+        -webkit-appearance: none; 
+        @include thumb;
+        margin-top: -1px; //On webkit browsers we nee to set a negative margin-top
+    }
+
+    //The code below is for the track (range bar)
+    &::-webkit-slider-runnable-track{
+        @include track;
+    }
+
+    &::-moz-range-track{
+        @include track;
+    }
+
+    &::-ms-track{
+        @include track;
+    }
+
+    &:focus{
+        outline: none; //Removes blue outline in webkit based browsers
+    }
+}
+
