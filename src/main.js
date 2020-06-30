@@ -1,39 +1,39 @@
 const modeOne = [{
     keyName: 'Q',
     id: 'Miau',
-    url: 'https://raw.githubusercontent.com/arturogascon/drum_machine/master/sounds/Q.mp3'
+    url: 'https://raw.githubusercontent.com/arturogascon/drum_machine/master/sounds/modeOne/Q.mp3'
 }, {
     keyName: 'W',
     id: 'Blah!',
-    url: 'https://raw.githubusercontent.com/arturogascon/drum_machine/master/sounds/W.mp3'
+    url: 'https://raw.githubusercontent.com/arturogascon/drum_machine/master/sounds/modeOne/W.mp3'
 }, {
     keyName: 'E',
     id: 'Buruburubu!',
-    url: 'https://raw.githubusercontent.com/arturogascon/drum_machine/master/sounds/E.mp3'
+    url: 'https://raw.githubusercontent.com/arturogascon/drum_machine/master/sounds/modeOne/E.mp3'
 }, {
     keyName: 'A',
     id: 'Mouth-explosion',
-    url: 'https://raw.githubusercontent.com/arturogascon/drum_machine/master/sounds/A.mp3'
+    url: 'https://raw.githubusercontent.com/arturogascon/drum_machine/master/sounds/modeOne/A.mp3'
 }, {
     keyName: 'S',
     id: 'Ahhhrgh!',
-    url: 'https://raw.githubusercontent.com/arturogascon/drum_machine/master/sounds/S.mp3'
+    url: 'https://raw.githubusercontent.com/arturogascon/drum_machine/master/sounds/modeOne/S.mp3'
 }, {
     keyName: 'D',
     id: 'Jijijijijiji!',
-    url: 'https://raw.githubusercontent.com/arturogascon/drum_machine/master/sounds/D.mp3'
+    url: 'https://raw.githubusercontent.com/arturogascon/drum_machine/master/sounds/modeOne/D.mp3'
 }, {
     keyName: 'Z',
     id: 'Bazinnngah',
-    url: 'https://raw.githubusercontent.com/arturogascon/drum_machine/master/sounds/Z.mp3'
+    url: 'https://raw.githubusercontent.com/arturogascon/drum_machine/master/sounds/modeOne/Z.mp3'
 }, {
     keyName: 'X',
     id: 'Spongebob-laugh',
-    url: 'https://raw.githubusercontent.com/arturogascon/drum_machine/master/sounds/X.mp3'
+    url: 'https://raw.githubusercontent.com/arturogascon/drum_machine/master/sounds/modeOne/X.mp3'
 }, {
     keyName: 'C',
     id: 'Mmmmmmmh!',
-    url: 'https://raw.githubusercontent.com/arturogascon/drum_machine/master/sounds/C.mp3'
+    url: 'https://raw.githubusercontent.com/arturogascon/drum_machine/master/sounds/modeOne/C.mp3'
 }
 ];
 
